@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Input_output';
+  name = "Divya Palanivel";  //ParentComponent
 }
