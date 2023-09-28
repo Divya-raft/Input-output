@@ -1,1 +1,5 @@
-<p>My name is {{name}}</p>
+<p>My name is {{nameMy}}</p>
+
+<label for="name">Add new name :</label>
+<input type="text" id="name" #nameFor>
+<button (click)="addName(nameFor.value)">Add name</button>
