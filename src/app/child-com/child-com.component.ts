@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component,EventEmitter,Input,Output } from '@angular/core';
 
 @Component({
   selector: 'app-child-com',
@@ -6,5 +6,12 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./child-com.component.css']
 })
 export class ChildComComponent {
-    @Input() name='';
+    @Input() nameMy='';
+    @Output() newName  = new EventEmitter<string>();
+
+    addName(value:string)
+    {
+      this.newName.emit(value);
+    }
+
 }
