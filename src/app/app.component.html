@@ -1,2 +1,6 @@
-<app-child-com [name]="name"></app-child-com>
+
+<app-child-com [nameMy]="nameMy" (newName)="addNewNames($event)"></app-child-com>
+<ul>
+    <li *ngFor="let name of names">{{name}}</li>
+  </ul>
 <router-outlet></router-outlet>
