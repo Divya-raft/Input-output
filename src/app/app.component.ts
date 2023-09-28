@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Input_output';
-  name = "Divya Palanivel";  //ParentComponent
+  nameMy = "Divya Palanivel";  //ParentComponent
+  names =['Divya','Sreedhar','Dhanalakshmi'];
+   
+  addNewNames(nameFor:string)
+  {
+    this.names.push(nameFor);
+  }
 }
